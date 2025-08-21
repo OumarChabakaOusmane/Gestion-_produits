@@ -1,0 +1,25 @@
+.action-icons i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.action-icons i:hover {
+  transform: scale(1.2);
+}
+
+.action-icons .view {
+  color: #2e86de !important;
+}
+
+.action-icons .edit {
+  color: #ff4081 !important;
+  fill: #ff4081 !important;
+}
+
+.action-icons .delete {
+  color: #e74c3c !important;
+  fill: #e74c3c !important;
+}
+
