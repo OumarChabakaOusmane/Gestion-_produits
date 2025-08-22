@@ -1,0 +1,34 @@
+<h2 *ngIf="!isEdit">Ajouter un produit</h2>
+<h2 *ngIf="isEdit">Modifier le produit</h2>
+
+<form (ngSubmit)="save()" #f="ngForm">
+  <div class="mb-3">
+    <label class="form-label">Nom</label>
+    <input name="name" class="form-control" [(ngModel)]="product.name" required />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Description</label>
+    <textarea name="description" class="form-control" [(ngModel)]="product.description"></textarea>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-md-4">
+      <label class="form-label">Prix (FCFA)</label>
+      <input type="number" name="price" class="form-control" [(ngModel)]="product.price" min="0" step="0.01" />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Catégorie</label>
+      <input name="category" class="form-control" [(ngModel)]="product.category" required />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Stock</label>
+      <input type="number" name="stock" class="form-control" [(ngModel)]="product.stock" min="0" />
+    </div>
+  </div>
+
+  <div class="mt-3">
+    <button class="btn btn-primary" type="submit">Enregistrer</button>
+    <a class="btn btn-secondary ms-2" routerLink="/products">Annuler</a>
+  </div>
+</form>

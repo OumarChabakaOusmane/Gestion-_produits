@@ -20,6 +20,10 @@ export class ProductListComponent implements OnInit {
     this.products = this.productService.getAll();
   }
 
+  addProduct() {
+    this.router.navigate(['/products/add']);
+  }
+
   deleteProduct(id: string) {
     if (confirm('Confirmer la suppression ?')) {
       this.productService.remove(id);
