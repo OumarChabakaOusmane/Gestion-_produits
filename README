@@ -1,0 +1,62 @@
+# Gestion des Produits
+Bienvenue dans l’application Angular de gestion des produits.  
+Cette application permet de gérer un catalogue de produits : ajouter, modifier, supprimer et consulter les produits facilement.
+
+## Fonctionnalités
+
+- Tableau de bord d’accueil avec message et accès rapide à la liste des produits
+- Affichage de la liste des produits avec : nom, description, prix (en FCFA), catégorie, stock
+- Ajout d’un nouveau produit
+- Modification d’un produit existant
+- Suppression d’un produit
+- Consultation des détails d’un produit
+
+## Structure du projet
+
+- **src/app/components/dashboard.component.ts**  
+  Composant d’accueil (dashboard) avec message de bienvenue et bouton vers la liste des produits
+
+- **src/app/components/product-list/product-list.component.ts & .html**  
+  Composant pour afficher la liste des produits et gérer les actions (voir, éditer, supprimer)
+
+- **src/app/services/product.service.ts**  
+  Service Angular pour la gestion des produits (CRUD)
+
+- **src/app/models/product.model.ts**  
+  Modèle de données pour les produits
+
+## Technologies utilisées
+
+- Angular
+- TypeScript
+- Bootstrap (mise en page et icônes)
+- CSS personnalisé
+
+## Installation
+
+1. Clonez le dépôt :
+   ```bash
+   git clone git@github.com:OumarChabakaOusmane/Gestion-_produits.git
+   cd Gestion-_produits
+   ```
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+3. Lancez l’application :
+   ```bash
+   ng serve
+   ```
+4. Ouvrez [http://localhost:4200](http://localhost:4200) dans votre navigateur.
+
+## Utilisation
+
+- Naviguez via le dashboard ou le menu pour accéder à la liste des produits.
+- Utilisez les boutons pour ajouter, modifier, supprimer ou consulter un produit.
+- Les prix sont affichés en FCFA.
+
+## Auteur
+
+OUMAR CHABAKA OUSMANE 
+NAJLA SEFADINE TAHA
+HADJE HAOUA MAHAMAT ALI
